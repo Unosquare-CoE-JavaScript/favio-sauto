@@ -19,3 +19,30 @@ TypeScript adds:
 - Non-javascript features like interfaces or generics
 - Rich Configuration Options
 - Modern Tooling that helps even in non-typescript projects
+
+## Core Types
+
+- number (All numbers, no differentiation between integers or floats)
+- string (All text values)
+- boolean (Just true or false, no "truthy" or "falsy" values)
+- object (Any JS object, more specific types (type of object) are possible)
+- Array (Any JS array, type can be flexible or strict (regarding the element types))
+- Tuple (Added by Typescript: Fixed-length array)
+- Enum (Added by TS: Automatically enumerated global constant identifiers)
+- Any (Any kind of value, no specific tpe assignment)
+
+Typescript can also use a feature named type inference that allows it to know the type of a value assigned to a variable. But it needs to be an assignation.
+
+The difference between unknown and any is that when we assign a variable unknown to another variable this throws us an error while with any type this does not happen.
+
+never type can be used for error handling with "throw" keyword or infinite loops (very rarely)
+
+## Classes
+
+TypeScript is great for Object-Oriented Programming
+
+## Interfaces vs Types
+
+Only interfaces can be used to describe the structure of an object, and while "type" is more flexible, interfaces are clearer.
+
+Interface can be used as a contract a class then has to adhere to.

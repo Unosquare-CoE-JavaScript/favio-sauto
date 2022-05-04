@@ -1,9 +1,15 @@
 "use strict";
-const button = document.querySelector("button");
-function clickHandler(message) {
-    console.log("Clicked!" + message);
+let add = (a, b) => +a + +b;
+class Person {
+    constructor(name) {
+        if (name)
+            this.name = name;
+    }
+    greet(phrase) {
+        console.log(`${phrase} ${this.name || "a Person"} from a class`);
+    }
 }
-if (button) {
-    button.addEventListener("click", clickHandler.bind(null, "Hello"));
-}
+let user1;
+user1 = new Person();
+user1.greet("Hi, there - I'm");
 //# sourceMappingURL=app.js.map
