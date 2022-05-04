@@ -46,3 +46,15 @@ TypeScript is great for Object-Oriented Programming
 Only interfaces can be used to describe the structure of an object, and while "type" is more flexible, interfaces are clearer.
 
 Interface can be used as a contract a class then has to adhere to.
+
+## Intersection types
+
+This is mainly used to combine existing object types. And it is defined using the & operator.
+
+## Types Guard
+
+Is just a term that describes the idea or approach of checking if a certain property or method exists before we try to use it, or if we can do something with the type before we try to use it for objects that can be done with instance of or with in
+
+## Discriminated Union
+
+It's a pattern that we can use when working with union types that makes implementing type guards easier, it is available when we work with object types.
