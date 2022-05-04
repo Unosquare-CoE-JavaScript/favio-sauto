@@ -58,3 +58,9 @@ Is just a term that describes the idea or approach of checking if a certain prop
 ## Discriminated Union
 
 It's a pattern that we can use when working with union types that makes implementing type guards easier, it is available when we work with object types.
+
+## Decorators
+
+Very useful for metaprogramming, it doesn't have a direct impact on our final customer, but instead decorators are a particularly well suited instrument for writing code, which is then easier to use by other developers.
+
+Decorators execute when our class is defined, not when it is instantiated.
