@@ -64,3 +64,17 @@ It's a pattern that we can use when working with union types that makes implemen
 Very useful for metaprogramming, it doesn't have a direct impact on our final customer, but instead decorators are a particularly well suited instrument for writing code, which is then easier to use by other developers.
 
 Decorators execute when our class is defined, not when it is instantiated.
+
+## Modular Code
+
+What does it mean to write modular code? Which simply means to split your code across multiple files so that each file on its own stay is manageable and maintanable.
+
+And then we simply import and export from into these files and make sure that they, for all these files are connected by typescript or by the browser or by some third party build tool.
+
+## Namespaces & File Bundling
+
+Use "namespace" code syntax to group code. Per-file or bundled compilation is possible (less imports to manage).
+
+## ES Imports/Exports
+
+Use ES6 import/export syntax. Per-file compilation but single <script></script> import.
