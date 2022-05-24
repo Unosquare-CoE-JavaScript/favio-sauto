@@ -37,3 +37,29 @@ Different mindset from unit testing.
 Unit testing:
 
 - Isolated: mock dependencies, test internals
+
+### Unit Testing Functions
+
+Functions separate from components
+
+- Used by several components
+- Complex logic
+
+Unit test if:
+
+- Complex logic difficult to test via functional tests
+- Too many edge cases
+
+### When to Unit Test?
+
+Something that can be covered by functional tests on button
+
+For more complicated functions, unit tests help with:
+
+- covering all possible edge cases
+- determining what caused functional tests to fail
+
+Issue with functional tests:
+
+- High-level makes them resistant to refactors
+- High-level makes them difficult to diagnose
