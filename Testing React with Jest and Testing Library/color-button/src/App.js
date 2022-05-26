@@ -1,42 +1,15 @@
-import { useState } from "react";
-import "./App.css";
-
-export function replaceCamelWithSpaces(colorName) {
-  return colorName.replace(/\B([A-Z])\B/g, " $1");
-}
+import Container from "react-bootstrap/Container";
+import OrderEntry from "./pages/entry/OrderEntry";
+import { OrderDetailsProvider } from "./contexts/OrderDetails";
+import SummaryForm from "./pages/summary/SummaryForm";
 
 function App() {
-  const [isRed, setIsRed] = useState(true);
-  const [isChecked, setIsChecked] = useState(false);
-
   return (
-    <div>
-      <button
-        style={{
-          backgroundColor: isChecked
-            ? "gray"
-            : isRed
-            ? "mediumvioletred"
-            : "midnightblue",
-        }}
-        onClick={() => {
-          setIsRed(!isRed);
-        }}
-        disabled={isChecked}
-      >
-        Change to {isRed ? "midnightblue" : "mediumvioletred"}
-      </button>
-      <input
-        type="checkbox"
-        id="disable-button-checkbox"
-        defaultChecked={isChecked}
-        aria-checked={isChecked}
-        onChange={(e) => {
-          setIsChecked(e.target.checked);
-        }}
-      />
-      <label htmlFor="disable-button-checkbox">Disable button</label>
-    </div>
+    <Container>
+      <OrderDetailsProvider>
+        <OrderEntry />
+      </OrderDetailsProvider>
+    </Container>
   );
 }
 
